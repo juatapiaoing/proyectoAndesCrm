@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seguridad | AndesCRM</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/modules.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="../index.html">
+                <img src="../assets/images/logo.png" alt="Logo AndesCRM">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="clientes.html">Clientes</a></li>
+                <li><a href="ventas.html">Oportunidades de Venta</a></li>
+                <li><a href="marketing.html">Marketing</a></li>
+                <li><a href="modules/agenda.html">Agenda</a></li>
+                <li><a href="estadisticas.html">Estadísticas</a></li>
+                <li><a href="seguridad.html" class="active">Seguridad</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="seguridad">
+            <h1>Seguridad</h1>
+            <p>Gestiona los roles, permisos y asegura la protección de los datos sensibles.</p>
+
+            <div class="button-group">
+                <button onclick="showAlert('Asignar roles y permisos a usuarios')">Gestionar Roles</button>
+                <button onclick="showAlert('Realizar respaldo de datos')">Respaldo de Datos</button>
+                <button onclick="showAlert('Revisar historial de accesos')">Historial de Accesos</button>
+            </div>
+
+            <div class="permissions-container">
+                <h2>Usuarios y Permisos</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Usuario</th>
+                            <th>Rol</th>
+                            <th>Permisos</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>admin</td>
+                            <td>SuperAdmin</td>
+                            <td>Todos</td>
+                            <td>
+                                <button onclick="showAlert('Editar permisos del usuario admin')">Editar</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>maria.lopez</td>
+                            <td>Vendedor</td>
+                            <td>Gestión de clientes, Oportunidades</td>
+                            <td>
+                                <button onclick="showAlert('Editar permisos del usuario maria.lopez')">Editar</button>
+                            </td>
+                        </tr>
+                        <!-- Más filas según sea necesario -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p></p>
+    </footer>
+
+    <script src="../js/alerts.js"></script>
+</body>
+</html>

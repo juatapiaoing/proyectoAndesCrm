@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Clientes | AndesCRM</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/modules.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="../index.html">
+                <img src="../assets/images/logo.png" alt="Logo AndesCRM">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="clientes.html" class="active">Clientes</a></li>
+                <li><a href="ventas.html">Oportunidades de Venta</a></li>
+                <li><a href="marketing.html">Marketing</a></li>
+                <li><a href="modules/agenda.html">Agenda</a></li>
+                <li><a href="estadisticas.html">Estadísticas</a></li>
+                <li><a href="seguridad.html">Seguridad</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="clientes">
+            <h1>Gestión de Clientes</h1>
+            <p>Administre los datos de sus clientes: agregar, modificar, eliminar o filtrar registros.</p>
+
+            <!-- Formulario para agregar clientes -->
+            <form id="clienteForm">
+                <div class="form-group">
+                    <label for="run">RUN:</label>
+                    <input type="text" id="run" name="run" placeholder="Ej: 12345678-9" required>
+                </div>
+                <div class="form-group">
+                    <label for="nombre">Nombre o Razón Social:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Nombre o Razón Social" required>
+                </div>
+                <div class="form-group">
+                    <label for="giro">Giro Comercial:</label>
+                    <input type="text" id="giro" name="giro" placeholder="Giro Comercial">
+                </div>
+                <div class="form-group">
+                    <label for="direccion">Dirección:</label>
+                    <input type="text" id="direccion" name="direccion" placeholder="Dirección">
+                </div>
+                <div class="form-group">
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono" placeholder="Ej: +56912345678" required>
+                </div>
+                <div class="form-group">
+                    <label for="correo">Correo:</label>
+                    <input type="email" id="correo" name="correo" placeholder="Correo Electrónico" required>
+                </div>
+                <button type="submit" class="highlight-button">Agregar Cliente</button>
+            </form>
+
+            <!-- Filtro para buscar en la tabla -->
+            <div class="filter">
+                <label for="filterInput">Filtrar Clientes:</label>
+                <input type="text" id="filterInput" placeholder="Buscar por nombre o run...">
+            </div>
+
+            <!-- Tabla de clientes -->
+            <div class="table-container">
+                <table id="clientesTable">
+                    <thead>
+                        <tr>
+                            <th>RUN</th>
+                            <th>Nombre/Razón Social</th>
+                            <th>Giro Comercial</th>
+                            <th>Dirección</th>
+                            <th>Teléfono</th>
+                            <th>Correo</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Las filas se llenarán dinámicamente -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p></p>
+    </footer>
+
+    <script src="../js/alerts.js"></script>
+    <script src="../js/clientes.js"></script>
+</body>
+</html>

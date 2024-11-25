@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oportunidades de Venta | AndesCRM</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/modules.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="../index.html">
+                <img src="../assets/images/logo.png" alt="Logo AndesCRM">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="clientes.html">Clientes</a></li>
+                <li><a href="ventas.html" class="active">Oportunidades de Venta</a></li>
+                <li><a href="marketing.html">Marketing</a></li>
+                <li><a href="modules/agenda.html">Agenda</a></li>
+                <li><a href="estadisticas.html">Estadísticas</a></li>
+                <li><a href="seguridad.html">Seguridad</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="ventas">
+            <h1>Oportunidades de Venta</h1>
+            <p>Gestiona tus oportunidades de venta y maximiza tus conversiones.</p>
+
+            <div class="button-group">
+                <button onclick="showAlert('Crear nueva oportunidad de venta')">Crear Oportunidad</button>
+                <button onclick="showAlert('Consultar oportunidades de venta abiertas')">Consultar Oportunidades</button>
+                <button onclick="showAlert('Actualizar estado de una oportunidad')">Actualizar Estado</button>
+                <button onclick="showAlert('Eliminar una oportunidad de venta')">Eliminar Oportunidad</button>
+            </div>
+
+            <div class="table-container">
+                <h2>Oportunidades Activas</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Cliente</th>
+                            <th>Estado</th>
+                            <th>Fecha de Creación</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>101</td>
+                            <td>María López</td>
+                            <td>En Proceso</td>
+                            <td>15/11/2024</td>
+                            <td>
+                                <button onclick="showAlert('Editar oportunidad de María López')">Editar</button>
+                                <button onclick="showAlert('Eliminar oportunidad de María López')">Eliminar</button>
+                            </td>
+                        </tr>
+                        <!-- Más filas según sea necesario -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p></p>
+    </footer>
+
+    <script src="../js/alerts.js"></script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estadísticas | AndesCRM</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/modules.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="../index.html">
+                <img src="../assets/images/logo.png" alt="Logo AndesCRM">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="clientes.html">Clientes</a></li>
+                <li><a href="ventas.html">Oportunidades de Venta</a></li>
+                <li><a href="marketing.html">Marketing</a></li>
+                <li><a href="modules/agenda.html">Agenda</a></li>
+                <li><a href="estadisticas.html" class="active">Estadísticas</a></li>
+                <li><a href="seguridad.html">Seguridad</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="estadisticas">
+            <h1>Estadísticas</h1>
+            <p>Obtén reportes y análisis detallados para la toma de decisiones estratégicas.</p>
+
+            <div class="button-group">
+                <button onclick="showAlert('Generar reporte de ventas mensuales')">Reporte Ventas</button>
+                <button onclick="showAlert('Generar estadísticas de clientes frecuentes')">Estadísticas Clientes</button>
+                <button onclick="showAlert('Analizar efectividad de campañas de marketing')">Efectividad de Campañas</button>
+            </div>
+
+            <div class="chart-container">
+                <h2>Gráficos y Resúmenes</h2>
+                <div class="chart">
+                    <p>Gráfico 1: Ventas por Mes</p>
+                    <img src="../assets/images/chart-placeholder.png" alt="Gráfico Ventas por Mes">
+                </div>
+                <div class="chart">
+                    <p>Gráfico 2: Clientes Activos</p>
+                    <img src="../assets/images/chart-placeholder.png" alt="Gráfico Clientes Activos">
+                </div>
+                <div class="chart">
+                    <p>Gráfico 3: Rendimiento de Campañas</p>
+                    <img src="../assets/images/chart-placeholder.png" alt="Gráfico Rendimiento de Campañas">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p></p>
+    </footer>
+
+    <script src="../js/alerts.js"></script>
+</body>
+</html>
